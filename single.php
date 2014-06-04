@@ -14,7 +14,7 @@
 
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 
-				<?php posted_on(); ?>
+				<?php get_template_part( 'partial/post,' '_meta')?>
 
 			</div>
 
