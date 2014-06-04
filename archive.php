@@ -27,7 +27,7 @@
 
 			<?php } ?>
 
-			<?php include (TEMPLATEPATH . '/inc/_pagination.php' ); ?>
+			<?php get_template_part( 'partial/_navigation')?>
 
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -35,7 +35,7 @@
 
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-						<?php include (TEMPLATEPATH . '/inc/_meta.php' ); ?>
+						<?php posted_on(); ?>
 
 						<div class="entry">
 
@@ -47,11 +47,11 @@
 
 			<?php endwhile; ?>
 
-			<?php include (TEMPLATEPATH . '/inc/_pagination.php' ); ?>
+			<?php get_template_part( 'partial/_navigation')?>
 
 	<?php else : ?>
 
-		<?php include (TEMPLATEPATH . '/inc/_notfound.php' ); ?>
+		<?php get_template_part( 'partial/_notfound')?>
 
 	<?php endif; ?>
 

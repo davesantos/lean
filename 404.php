@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-	<?php include (TEMPLATEPATH . '/inc/_notfound.php' ); ?>
+	<?php get_template_part( 'partial/_notfound')?>
 
 <?php get_footer(); ?>

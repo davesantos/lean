@@ -1,13 +1,8 @@
 @import url("normalize.css");
-html {
-  padding: 0 20px;
-}
-
 body {
-  max-width: 100%;
+  max-width: 1322px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 20px;
 }
 body::after {
   content: " ";
@@ -15,17 +10,8 @@ body::after {
   clear: both;
 }
 
-h1, h2, h3, h4 {
-  font-size: inherit;
-}
-
 a {
   text-decoration: none;
-}
-
-img, video, object, embed {
-  max-width: 100%;
-  height: auto !important;
 }
 
 .offscreen {
@@ -35,19 +21,6 @@ img, video, object, embed {
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.clearfix:after {
-  clear: both;
 }
 
 .nav ul {

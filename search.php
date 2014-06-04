@@ -4,19 +4,19 @@
 
 		<h2>Search Results</h2>
 
-		<?php include (TEMPLATEPATH . '/inc/_pagination.php' ); ?>
+		<?php get_template_part( 'partial/_navigation')?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<?php include (TEMPLATEPATH . '/inc/_post.php' ); ?>
+			<?php get_template_part( 'partial/_post')?>
 
 		<?php endwhile; ?>
 
-		<?php include (TEMPLATEPATH . '/inc/_pagination.php' ); ?>
+		<?php get_template_part( 'partial/_navigation')?>
 
 	<?php else : ?>
 
-		<?php include (TEMPLATEPATH . '/inc/_notfound.php' ); ?>
+		<?php get_template_part( 'partial/_notfound')?>
 
 	<?php endif; ?>
 

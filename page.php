@@ -6,7 +6,7 @@
 
 		<h2><?php the_title(); ?></h2>
 
-		<?php include (TEMPLATEPATH . '/inc/_meta.php' ); ?>
+		<?php posted_on(); ?>
 
 		<div class="entry">
 

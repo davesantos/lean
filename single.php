@@ -14,7 +14,7 @@
 
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 
-				<?php include (TEMPLATEPATH . '/inc/_meta.php' ); ?>
+				<?php posted_on(); ?>
 
 			</div>
 
