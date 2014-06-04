@@ -9,8 +9,8 @@
 	<meta name="google-site-verification" content="">
 	<meta name="author" content="">
 
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
