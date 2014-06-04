@@ -1,0 +1,6 @@
+<p><?php _e( 'Apologies, but the page you requested could not be found.' ); ?></p>
+
+<script type="text/javascript">
+	// focus on search field after it has loaded
+	document.getElementById('s') && document.getElementById('s').focus();
+</script>
