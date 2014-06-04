@@ -10,9 +10,6 @@ register_nav_menus( array(
 	'primary' => __( 'Primary Navigation'),
 ) );
 
-// Add RSS links to <head> section
-automatic_feed_links();
-
 // Clean up the <head>
 function removeHeadLinks() {
 	remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0 ); // Display relational links for the posts adjacent to the current post.
