@@ -1,0 +1,77 @@
+@import "base";
+
+//1322 Grid System
+$total-columns  : 12;				// a 12-column grid
+$column-width   : 90px;				// each column is 4em wide
+$gutter-width   : 22px;				// 1em gutters between columns
+$grid-padding   : $gutter-width;	// grid-padding equal to gutters
+
+// $susy: (
+// 	columns: $total-columns,
+// 	gutters: $gutter-width / $column-width,
+// 	column-width: $column-width,
+// );
+
+@import "mixins";
+
+html {padding:0 20px;}
+
+body {
+	@include container;
+	line-height:20px;
+}
+
+h1,h2,h3,h4 {
+	font-size:inherit;
+}
+
+a {
+	text-decoration:none;
+}
+
+img, video, object, embed {
+	max-width: 100%;
+	height: auto !important;
+}
+
+.offscreen {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.clearfix {
+	zoom:1;
+	&:before, &:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+	&:after { clear: both; }
+}
+
+.nav {
+	ul {
+		list-style:none;
+		padding:0;
+	}
+}
+
+// Tablet
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	}
+
+}
+
+
+// Mobile
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	}
+
+
+}
