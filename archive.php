@@ -35,7 +35,7 @@
 
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-						<?php posted_on(); ?>
+						<?php get_template_part( 'partial/_post', 'meta')?>
 
 						<div class="entry">
 

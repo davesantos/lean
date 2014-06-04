@@ -10,6 +10,10 @@ body::after {
   clear: both;
 }
 
+h1, h2, h3, h4 {
+  font-size: inherit;
+}
+
 a {
   text-decoration: none;
 }

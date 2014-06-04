@@ -6,7 +6,7 @@
 
 		<h2><?php the_title(); ?></h2>
 
-		<?php posted_on(); ?>
+		<?php get_template_part( 'partial/_post', 'meta')?>
 
 		<div class="entry">
 
