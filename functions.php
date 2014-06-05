@@ -1,17 +1,18 @@
 <?php
 
-// Add default posts and comments RSS feed links to head
+if ( ! isset( $content_width ) ) $content_width = 900;
+
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
+// add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video'));
 
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
 	'primary' => __( 'Primary Navigation'),
 ) );
 
-// Clean up the <head>
-function removeHeadLinks() {
+function setup() {
+	// Clean up the <head>
 	remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0 ); // Display relational links for the posts adjacent to the current post.
 	remove_action('wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
 	remove_action('wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
@@ -24,7 +25,7 @@ function removeHeadLinks() {
 	remove_action('wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
 	remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 }
-add_action('init', 'removeHeadLinks');
+add_action('init', 'setup');
 
 
 function continue_reading_link() {
