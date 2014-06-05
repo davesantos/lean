@@ -5,9 +5,7 @@
 	<?php get_template_part( 'partial/_post', 'meta')?>
 
 	<div class="entry">
-
-			<?php the_content(); ?>
-
+		<?php the_content(); ?>
 	</div>
 
 	<?php get_template_part( 'partial/_post', 'postmeta')?>
