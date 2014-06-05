@@ -47,7 +47,7 @@
 
 			<?php endwhile; ?>
 
-			<?php get_template_part( 'partial/_navigation')?>
+		<?php get_template_part( 'partial/_navigation')?>
 
 	<?php else : ?>
 
