@@ -7,10 +7,19 @@
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( is_search() ) : ?>
+
+			<?php if ( has_post_thumbnail()) : ?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+				<?php the_post_thumbnail( 'medium' ); ?>
+				</a>
+			<?php endif; ?>
+
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div>
+
 		<?php else : ?>
+
 			<div class="entry-content">
 				<?php the_content(); ?>
 
