@@ -19,8 +19,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<header class="header">
-		<h1><a href="<?php echo get_option('home'); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+	<header class="header" role="banner">
+		<h1><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 		<div class="description"><?php bloginfo('description'); ?></div>
 		<div class="nav" role="navigation">
 			<ul>
