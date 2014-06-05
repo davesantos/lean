@@ -99,3 +99,5 @@
 </div>
 
 <?php endif; ?>
+
+<?php comment_form(); ?>
