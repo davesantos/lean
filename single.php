@@ -6,8 +6,12 @@
 
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 
+		<?php if ( is_search() ) : ?>
+			<div class="entry-summary">
+				<?php the_excerpt(); ?>
+			</div>
+		<?php else : ?>
 			<div class="entry-content">
-
 				<?php the_content(); ?>
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
@@ -17,8 +21,9 @@
 				<?php get_template_part( 'partial/post', '_meta')?>
 
 			</div>
+		<?php endif; ?>
 
-			<?php edit_post_link('Edit this entry','','.'); ?>
+		<?php edit_post_link('Edit this entry','','.'); ?>
 
 		</article>
 
