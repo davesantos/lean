@@ -13,11 +13,9 @@
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
 
 </head>
-
 <body <?php body_class(); ?>>
 	<header class="header" role="banner">
 		<h1><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -28,7 +26,4 @@
 			</ul>
 		</div>
 	</header>
-
 	<section class="content">
-
-

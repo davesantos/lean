@@ -27,7 +27,7 @@
 
 			<?php } ?>
 
-			<?php get_template_part( 'partial/_navigation')?>
+			<?php get_template_part( 'partials/_navigation')?>
 
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -35,7 +35,7 @@
 
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-						<?php get_template_part( 'partial/_post', 'meta')?>
+						<?php get_template_part( 'partials/_post', 'meta')?>
 
 						<div class="entry">
 
@@ -47,11 +47,11 @@
 
 			<?php endwhile; ?>
 
-		<?php get_template_part( 'partial/_navigation')?>
+		<?php get_template_part( 'partials/_navigation')?>
 
 	<?php else : ?>
 
-		<?php get_template_part( 'partial/_notfound')?>
+		<?php get_template_part( 'partials/_notfound')?>
 
 	<?php endif; ?>
 
