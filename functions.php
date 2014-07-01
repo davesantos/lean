@@ -24,9 +24,10 @@ function setup() {
 	remove_action('wp_head', 'wlwmanifest_link' ); // Display the link to the Windows Live Writer manifest file.
 	remove_action('wp_head', 'wp_generator' ); // Display the XHTML generator that is generated on the wp_head hook, WP version
 	remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
+	//add_editory_style
+    add_editor_style( get_stylesheet_uri() );
 }
 add_action('init', 'setup');
-
 
 function continue_reading_link() {
 	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>' ) . '</a>';
