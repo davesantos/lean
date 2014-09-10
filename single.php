@@ -27,7 +27,7 @@
 
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 
-				<?php get_template_part( 'partials/post', '_meta')?>
+				<?php get_template_part( 'partial/post', '_meta')?>
 
 			</div>
 		<?php endif; ?>

@@ -2,12 +2,12 @@
 
 	<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-	<?php get_template_part( 'partials/_post', 'meta')?>
+	<?php get_template_part( 'partial/_post', 'meta')?>
 
 	<div class="entry">
 		<?php the_content(); ?>
 	</div>
 
-	<?php get_template_part( 'partials/_post', 'postmeta')?>
+	<?php get_template_part( 'partial/_post', 'postmeta')?>
 
 </article>
