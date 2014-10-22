@@ -7,7 +7,7 @@
 http_path = "/"
 
 css_dir = "css"
-sass_dir = "scss"
+sass_dir = "_sass"
 images_dir = "assets"
 javascripts_dir = "js"
 # environment = :development
