@@ -79,7 +79,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-body::after {
+body:after {
   content: " ";
   display: block;
   clear: both;
